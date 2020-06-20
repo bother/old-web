@@ -1,0 +1,33 @@
+// fonts
+
+@import url('https://rsms.me/inter/inter.css');
+
+// tailwind
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// global
+
+a {
+  @apply text-red-500 duration-200 transition-colors;
+
+  &:hover {
+    @apply text-red-400;
+  }
+
+  &:active {
+    @apply text-red-600;
+  }
+}
+
+body {
+  @apply bg-primary font-sans cursor-default antialiased max-w-xl;
+}
+
+// layout
+
+main {
+  @apply m-8;
+}
